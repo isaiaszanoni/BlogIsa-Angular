@@ -1,1 +1,53 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+
+    <div class="row  bg-secondary align-items-center">
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-light">
+                    <h1 class="fs-54">Seja bem Vinde!</h1>
+                    <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões!</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-light mr-2">Nova Postagem</button>
+                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="https://i.imgur.com/HiRnLRT.png" alt="time" width="500px" height="500px">
+        </div>
+
+    </div>
+</div>
+
+<div class="container mt-4 mb-4" id="postagens">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+          <a class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
+          
+          <a class="nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
+          
+          <a class="nav-link text-secondary font-weight-bold" id="nav-postagemTema" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por Tema</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-home-tab">
+            Todas as Postagens
+        </div>
+        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">
+            Minhas Postagens
+        </div>
+        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+            Postagens por tema
+        </div>
+      </div>
+    
+</div>
