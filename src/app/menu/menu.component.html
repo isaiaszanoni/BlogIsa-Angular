@@ -6,10 +6,10 @@
     <div class="collapse navbar-collapse bg-secondary" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item active">
-            <img src="../../assets/img/user.png" alt="Avatar ou imagem do usuário" width="45px" height="45px" class="img-fluid rounded-circle">
+            <img src="{{foto}}" alt="Avatar ou imagem do usuário" width="45px" height="45px" class="img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-3">
-          <p class="fs-16 pl-3 m-0 font-weight-bold text-white">Usuárie</p>
+          <p class="fs-16 pl-3 m-0 font-weight-bold text-white">{{nome}}</p>
         </li>
         <li class="nav-item pl-3">
             <a href="#">
@@ -22,7 +22,7 @@
       </ul>
       <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item pl-3">
-            <a class="fs-16 pl-3 m-0 font-weight-bold text-white">
+            <a (click)='sair()' class="fs-16 pl-3 m-0 font-weight-bold text-white">
                 Sair 
                 <i class="fa fa-sign-out  ml-2" aria-hidden="true"></i>
             </a>
