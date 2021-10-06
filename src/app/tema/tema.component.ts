@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
 import { TemaService } from '../service/tema.service';
@@ -21,8 +22,8 @@ export class TemaComponent implements OnInit {
 
   ngOnInit() {
     if(environment.token == ''){
-      // alert('Sua sessão expirou, faça login novamente.')
-      this.router.navigate(['/entrar'])
+      alert('Sua sessão expirou, faça login novamente.')
+      this.router.navigate(['/inicio'])
     }
 
     this.findAllTemas()
@@ -42,5 +43,6 @@ export class TemaComponent implements OnInit {
       this.listaTemas = resp
     })
   }
+
 
 }
